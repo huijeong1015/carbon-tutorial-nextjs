@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Header,
   HeaderContainer,
@@ -13,10 +11,9 @@ import {
   SideNav,
   SideNavItems,
   HeaderSideNavItems,
-} from "@carbon/react";
-import { Switcher, Notification, UserAvatar } from "@carbon/icons-react";
-
-import Link from "next/link";
+} from '@carbon/react';
+import { Switcher, Notification, UserAvatar } from '@carbon/icons-react';
+import Link from 'next/link';
 
 const TutorialHeader = () => (
   <HeaderContainer
@@ -43,9 +40,7 @@ const TutorialHeader = () => (
         >
           <SideNavItems>
             <HeaderSideNavItems>
-              <Link href="/repos" passHref legacyBehavior>
-                <HeaderMenuItem>Repositories</HeaderMenuItem>
-              </Link>
+              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
